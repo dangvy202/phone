@@ -1,0 +1,7 @@
+.ps-product--detail .ps-product__meta {
+    align-items: baseline;
+}
+
+.ps-product--detail .ps-product__meta p {
+    margin-top: 0;
+}
