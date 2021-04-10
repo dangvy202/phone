@@ -32,11 +32,12 @@ class Template{
 			$view->_metaName 	= $view->createMeta($arrCongif['metaName'], 'name');
 			$view->_cssFiles 	= $view->createLink($this->_folderTemplate . $arrCongif['dirCss'], $arrCongif['fileCss'], 'css');
 
-			$view->_plugins 	= $view->createLink($this->_folderTemplate . $arrCongif['dirPlugins'], $arrCongif['filePlugin'], 'plugins');
+			$view->_pluginsCSS 	= $view->createLink($this->_folderTemplate . $arrCongif['dirPlugins'], $arrCongif['filePluginCSS'], 'css');
+			$view->_pluginsJS 	= $view->createLink($this->_folderTemplate . $arrCongif['dirPlugins'], $arrCongif['filePluginJS'], 'js');
 			$view->_fonts 		= $view->createLink($this->_folderTemplate . $arrCongif['dirFonts'], $arrCongif['fileFont'], 'fonts');
 
 			$view->_jsFiles 	= $view->createLink($this->_folderTemplate . $arrCongif['dirJs'], $arrCongif['fileJs'], 'js');
-			$view->_dirImg 		= $view->createLink($this->_folderTemplate . $arrCongif['dirImg'], $arrCongif['fileImg'], 'img');
+			$view->_dirImg 		= TEMPLATE_URL . $this->_folderTemplate . $arrCongif['dirImg'] . DS;
 					
 			$view->setTemplatePath(TEMPLATE_PATH . $folderTemplate . $fileTemplate);
 		}

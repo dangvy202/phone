@@ -12,14 +12,14 @@
 	define ('BLOCK_PATH'		, APPLICATION_PATH . 'block' . DS);			// Định nghĩa đường dẫn đến thư mục block							
 	define ('TEMPLATE_PATH'		, PUBLIC_PATH . 'template' . DS);			// Định nghĩa đường dẫn đến thư mục template							
 	
-	define	('ROOT_URL'			, DS . 'FONTENDZEND' . DS);
+	define	('ROOT_URL'			, DS);
 	define	('APPLICATION_URL'	, ROOT_URL . 'application' . DS);
 	define	('PUBLIC_URL'		, ROOT_URL . 'public' . DS);
 	define	('UPLOAD_URL'		, PUBLIC_URL . 'files' . DS);
 	define	('TEMPLATE_URL'		, PUBLIC_URL . 'template' . DS);
 	
 	
-	define	('DEFAULT_MODULE'		, 'client');
+	define	('DEFAULT_MODULE'		, 'test');
 	define	('DEFAULT_CONTROLLER'	, 'index');
 	define	('DEFAULT_ACTION'		, 'index');
 
@@ -27,7 +27,7 @@
 	define ('DB_HOST'			, 'localhost');
 	define ('DB_USER'			, 'root');						
 	define ('DB_PASS'			, '');						
-	define ('DB_NAME'			, 'bookstore');						
+	define ('DB_NAME'			, 'php08_dangvy_project');						
 	define ('DB_TABLE'			, 'group');			
 
 	// ====================== DATABASE TABLE===========================
